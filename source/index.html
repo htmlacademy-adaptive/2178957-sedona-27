@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
@@ -14,6 +16,7 @@
     <nav class="header__main__navigation">
       <button class="main__navigation__button__toggle">
         <span class="visually-hidden">Открыть меню</span>
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.9 0H0v4h22.9V0zM22.9 9H0v4h22.9V9zM22.9 18H0v4h22.9v-4z" fill="#81B3D2"/></svg>
       </button>
       <div class="header__main__navigation__wrapper">
         <ul class="main__navigation__list">
@@ -41,7 +44,7 @@
       </a>
     </section>
     <section class="info__page">
-      <h2 class="info__page__title title">седона — небольшой<br> городок в аризоне,<br> заслуживающий большего!</h2>
+      <h2 class="info__page__title">седона — небольшой<br> городок в аризоне,<br> заслуживающий большего!</h2>
       <p class="info__page__description">Рассмотрим 5 причин, по которым<br> Седона круче, чем гранд каньон!</p>
     </section>
     <section class="advantages">
@@ -57,15 +60,15 @@
           <img src="img/street-sedona.jpg" width="320" height="260" alt="Изображение улицы в городе Седона">
         </li>
         <li class="advantages__item background__house">
-          <h3 class="advantages__title title">Жилье</h3>
+          <h3 class="advantages__title">Жилье</h3>
           <p class="advantages__description">Рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
         </li>
         <li class="advantages__item background__humburger">
-          <h3 class="advantages__title title">ЕДА</h3>
+          <h3 class="advantages__title">ЕДА</h3>
           <p class="advantages__description">Всегда заказывайте фирменный<br> бургер, вы не разочаруетесь!</p>
         </li>
         <li class="advantages__item background__souvenirs">
-          <h3 class="advantages__title title">СУВЕНИРЫ</h3>
+          <h3 class="advantages__title">СУВЕНИРЫ</h3>
           <p class="advantages__description">Не только китайского, но и<br> местного производства!</p>
         </li>
         <li class="advantages__item advantages__item--secondary">
@@ -78,19 +81,19 @@
           <img src="img/canyon-sedona.jpg" width="320" height="260" alt="Изображение Гранд-Каньона">
         </li>
         <li class="advantages__item--changed">
-          <h3 class="advantages__title title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+          <h3 class="advantages__title--changed">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
           <p class="advantages__numbering--changed">— №3 —</p>
-          <p class="advantages__description">все интересные места находятся<br> очень близко</p>
+          <p class="advantages__description--changed">все интересные места находятся<br> очень близко</p>
         </li>
         <li class="advantages__item--changed">
-          <h3 class="advantages__title title">КРАСИВАЯ ДОРОГА</h3>
+          <h3 class="advantages__title--changed">КРАСИВАЯ ДОРОГА</h3>
           <p class="advantages__numbering--changed">— №4 —</p>
-          <p class="advantages__description">ехать в седону из лас-вегаса<br> совсем не скучно!</p>
+          <p class="advantages__description--changed">ехать в седону из лас-вегаса<br> совсем не скучно!</p>
         </li>
         <li class="advantages__item--changed">
-          <h3 class="advantages__title title">МАЛО ТУРИСТОВ</h3>
+          <h3 class="advantages__title--changed">МАЛО ТУРИСТОВ</h3>
           <p class="advantages__numbering--changed">— №5 —</p>
-          <p class="advantages__description">Большинство едет в гранд каньон<br> толпится там</p>
+          <p class="advantages__description--changed">Большинство едет в гранд каньон<br> толпится там</p>
         </li>
       </ul>
     </section>
@@ -111,18 +114,20 @@
     <h2 class="page__footer__title">#visitSEDONA</h2>
     <ul class="page__footer__list">
       <li class="page__footer__item">
-        <a class="page__footer__link" href="#"><span class="visually-hidden">Иконка вконтакте</span></a>
+        <a class="page__footer__link" href="#"><span class="visually-hidden">Иконка вконтакте</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_44792_182)"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93z" fill="#fff"/></g><defs><clipPath id="clip0_44792_182"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg></a>
       </li>
       <li class="page__footer__item">
-        <a class="page__footer__link" href="#"><span class="visually-hidden">Иконка телеграмм</span></a>
+        <a class="page__footer__link" href="#"><span class="visually-hidden">Иконка телеграмм</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.44 4.62l-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51z" fill="#fff"/></svg></a>
       </li>
       <li class="page__footer__item">
-        <a class="page__footer__link" href="#"><span class="visually-hidden">Иконка ютуб</span></a>
+        <a class="page__footer__link" href="#"><span class="visually-hidden">Иконка ютуб</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8zM9.03 15.4V8.6l6.84 3.4-6.84 3.4z" fill="#fff"/></svg></a>
       </li>
     </ul>
     <p class="page__footer__text">Разработано</p>
     <a href="img/htmlacademy.svg.svg"><span class="visually-hidden">Логотип htmlacademy</span></a>
   </footer>
 </body>
-
 </html>
