@@ -1,174 +1,146 @@
-.advantages {
-    background-color: #ffffff;
-  }
 
-  .advantages__list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  .advantages__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #000000;
-    margin: 0 222px 16px 65px;
-    padding-top: 33px;
-  }
-
-  .advantages__item {
-    background-color: #ffffff;
-  }
-
-  .advantages__image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .advantages__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #333333;
-    margin: 0 18px 0 65px;
-  }
-
-  .advantages__description:last-child {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #333333;
-    margin: 0 18px 0 65px;
-    padding-bottom: 46px;
-  }
-
-  .advantages__numbering {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #333333;
-    margin: 0;
-  }
-
-  .advantages__title--secondary {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #81b3d2;
-    margin: 0 18px 11px 18px;
-    padding-top: 54px;
-    text-align: center;
-  }
-
-  .advantages__item--secondary {
-    background-color: #81b3d2;
-  }
-
-  .advantages__numbering--secondary {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin: 0 18px 17px 18px;
-    text-align: center;
-  }
-
-  .advantages__description--secondary {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #81b3d2;
-    margin: 0 18px;
-    padding-bottom: 40px;
-    text-align: center;
-  }
-
-  .advantages__title--changed {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: #eeeeee;
-    margin: 0 18px 11px 18px;
-    padding-top: 54px;
-    text-align: center;
-  }
-
-  .advantages__item--changed {
-    background-color: #eeeeee;
-  }
-
-  .advantages__numbering--changed {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #333333;
-    margin: 0 18px 17px 18px;
-    text-align: center;
-  }
-
-  .advantages__description--changed {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: #eeeeee;
-    margin: 0 18px;
-    padding-bottom: 40px;
-    text-align: center;
-    border-bottom: 1px solid #d6d6d6;
-  }
-
-  .advantages__description--changed:last-child {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: #eeeeee;
-    margin: 0 18px;
-    padding-bottom: 40px;
-    text-align: center;
-    border: none;
-  }
-
-@media (min-width: 768px) {
-  .advantages__list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #81b3d2;
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .advantages__item {
-    background-color: #ffffff;
-
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-
 }
 
-@media (min-width: 1200px){
-  .advantages__list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+.advantages__item {
+  background-color: #81b3d2;
+  @media (min-width: 768px) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
+  background-color: #81b3d2;
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
+.advantages__container{
+  @media (min-width: 768px){
+    width: 256px;
+  }
+  @media (min-width: 1200px){
+    width: 400px;
+  }
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
+  margin: 0;
+  margin-bottom: 11px;
+  padding-top: 54px;
+}
+
+.advantages__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.advantages__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.advantages__image {
+  display: block;
+  @media (min-width: 768px) {
+    width: 512px;
+    height: 256px;
+  }
+  @media (min-width: 768px) {
+    width: 800px;
+    height: 256px;
+  }
+}
+
+.advantages__list--secondary {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.advantages__list--secondary {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+}
+.advantages__item--secondary {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.advantages__item--secondary:last-child {
+  background-color: #eeeeee;
+  border-bottom: none;
+}
+
+.advantages__title--secondary {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.advantages__number--secondary {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #eeeeee;
+}
+
+.advantages__description--secondary {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #eeeeee;
 }
