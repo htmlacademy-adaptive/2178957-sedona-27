@@ -1,9 +1,10 @@
 .footer {
 	background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 120px;
+
+    @media (min-width: 768px){
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer__title {
@@ -16,4 +17,33 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    margin-left: 45px;
+    margin-right: 97px;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 104px;
+    margin-right: 254px;
+  }
 }
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  margin: 0 96px;
+  padding-bottom: 23px;
+
+  @media (min-width: 768px){
+    margin-left: 100px;
+  }
+  @media (min-width: 1200px){
+    margin-left: 0;
+  }
+}
+
+.footer-text {
+  margin-right: 12px;
+}
+
